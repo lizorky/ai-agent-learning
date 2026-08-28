@@ -84,4 +84,3 @@ Send friends the generated `https://...serveousercontent.com` link. One URL carr
 The browser client still reads `NEXT_PUBLIC_GAME_SERVER_URL` when provided. A permanent always-on deployment should use a persistent WebSocket-capable game host or a named tunnel rather than a temporary reverse tunnel.
 
 The framework is intentionally small. Item progress currently lives in each browser, while the server validates all item ids, quantities, equipment effects, consumable use, drops, pickups, enemies, projectiles, combat, and stage progression. Accounts, durable server-side persistence, matchmaking, anti-cheat hardening, additional stages and fully animated heroes, skill trees, forging, and production deployment remain future layers.
-
