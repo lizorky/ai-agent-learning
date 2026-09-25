@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>白毛猴 · 四段普攻试打</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101818;color:#e6e9dc;font:16px system-ui,sans-serif}main{max-width:1180px;margin:32px auto;padding:0 24px}.eyebrow{color:#c0ad76;font-size:12px;letter-spacing:3px}h1{font-size:30px;margin:10px 0}p{color:#aab9af;line-height:1.6}.top{display:flex;justify-content:space-between;align-items:center}.tag{border:1px solid #45574b;padding:8px 14px;border-radius:30px;color:#c7d8be;font-size:13px}canvas{display:block;width:100%;aspect-ratio:1100/540;background:#1b2925;border:1px solid #3d5145;border-radius:12px;outline:none}.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:18px 0}button,select{font:inherit;background:#263c31;color:#eee8d6;border:1px solid #566b51;border-radius:7px;padding:10px 16px;cursor:pointer}button:hover{background:#3c5641}label{display:flex;align-items:center;gap:8px;color:#c4cec4}input{accent-color:#c6b273}.stats{display:flex;flex-wrap:wrap;gap:26px;padding:14px 18px;border:1px solid #34493e;border-radius:8px;color:#b9c7bb}.stats b{color:#e3c983}.note{font-size:13px}kbd{background:#314237;padding:2px 6px;border-radius:4px}#status{min-height:24px;color:#d9c48c}
+</style><main>
+<div class="top"><div><div class="eyebrow">DREAM JOURNEY / COMBAT STUDY 01</div><h1>白毛猴 · 四段普攻试打</h1></div><span class="tag">四段连击验收样品</span></div>
+<p><kbd>A</kbd> / <kbd>D</kbd> 走路，双击并按住跑步　<kbd>K</kbd> 跳跃 / 二段跳　<kbd>J</kbd> 四段普攻，相邻按键间隔不超过 500ms　<kbd>H</kbd> 判定框　<kbd>Esc</kbd> 暂停。</p>
+<canvas id="game" width="1100" height="540" tabindex="0" aria-label="白毛猴四段普攻测试场景"></canvas>
+<div class="controls"><button id="jump">跳跃 / 二段跳 K</button><button id="attack">普攻连击 J</button><button id="left">向左一步</button><button id="right">向右一步</button><button id="reset">重置</button><button id="pause">暂停</button><label><input id="debug" type="checkbox">显示判定框 H</label><label>动作速度<select id="speed"><option value="1">正常（已提速 2 倍）</option><option value="0.5">半速</option><option value="0.25">四分之一速度</option></select></label></div>
+<div class="stats"><span>动作：<b id="phase">加载中</b></span><span>帧：<b id="frame">—</b></span><span>命中：<b id="hits">0</b></span><span>本拳：<b id="result">—</b></span></div>
+<p id="status">正在加载角色和石头怪动作…</p><p class="note">红框＝当前有效攻击范围；蓝框＝角色受击范围；金框＝石头怪受击范围。石头怪会在刀刃触发范围内原地攻击。</p>
+</main><script type="module" src="/prototypes/punch-test/movement-demo.mjs"></script></html>

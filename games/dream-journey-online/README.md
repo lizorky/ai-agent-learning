@@ -10,8 +10,8 @@ This repository does not contain decompiled game code or copyrighted assets from
 - Up to four players per room
 - Server-authoritative movement, jumping, attacks, health, enemy AI, damage, death, and respawn
 - Eight-frame Monkey King fighter and mountain-demon animation sheets covering idle, movement, jump/charge, attack, hurt, and defeat
-- A buffered three-hit staff combo with escalating damage, range, knockback, hit-stun, and player invulnerability frames
-- Forward-only staff hitboxes that resolve on the visible impact frame instead of from the hero body
+- A buffered three-hit unarmed combo with escalating damage, range, knockback, hit-stun, and player invulnerability frames
+- Forward-only fist hitboxes that resolve on the visible impact frame instead of from the hero body
 - Three Vanguard skills with authoritative mana costs and cooldowns: `U` Staff Sweep, `O` Sky Breaker, and `P` Blazing Rush
 - Fifteen original items across weapons, armor, trinkets, consumables, and materials
 - Server-authoritative equipment bonuses, consumable use, weighted monster drops, and proximity pickup
@@ -84,4 +84,3 @@ Send friends the generated `https://...serveousercontent.com` link. One URL carr
 The browser client still reads `NEXT_PUBLIC_GAME_SERVER_URL` when provided. A permanent always-on deployment should use a persistent WebSocket-capable game host or a named tunnel rather than a temporary reverse tunnel.
 
 The framework is intentionally small. Item progress currently lives in each browser, while the server validates all item ids, quantities, equipment effects, consumable use, drops, pickups, enemies, projectiles, combat, and stage progression. Accounts, durable server-side persistence, matchmaking, anti-cheat hardening, additional stages and fully animated heroes, skill trees, forging, and production deployment remain future layers.
-

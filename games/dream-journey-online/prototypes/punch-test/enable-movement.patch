@@ -1,0 +1,6 @@
+*** Begin Patch
+*** Update File: E:/codex projects/games/dream-journey-online/prototypes/punch-test/index.html
+@@
+-</main><script type="module" src="./main.mjs"></script></html>
++</main><script type="module" src="/prototypes/punch-test/movement-demo.mjs"></script></html>
+*** End Patch
